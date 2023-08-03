@@ -1,0 +1,90 @@
+$accent-color: #e59f14
+$second-accent-color: #45CCD8
+$bg-color: #212529df
+
+.container-fluid
+    padding-top: 2%
+    padding-bottom: 10%
+    min-height: 50rem
+    background-color: #000000
+
+.row-projects
+    padding-left: 3%
+    padding-right: 3%
+    // padding-bottom: 3%
+    // justify-content: left
+
+.col-title
+    padding-left: 3%
+    padding-bottom: 5%
+
+h1
+    color: $accent-color
+
+a
+    color: $accent-color
+
+
+.card:hover .card-img-overlay
+  opacity: 1
+
+.card-img-overlay
+  transition: 0.8s
+  padding: 0
+  opacity: 0
+
+.el2
+    background-image: url('https://img.freepik.com/premium-photo/glowing-computer-chip-complexity-electronics-industry-background_145644-371.jpg')
+    background-size: cover
+    background-position: 45%
+    height: 45rem
+
+.el3
+    background-image: url('https://authena.io/wp-content/uploads/2020/12/2.jpg')
+    background-size: cover
+    background-position: 50%
+    min-height: 45rem
+    // margin-top: 1rem
+    // margin-bottom: 1rem
+.el4
+    background-image: url('https://www.raicultura.it/cropgd/900x520/dl/img/2020/02/26/1582717587391_technology-1283624_1920.jpg')
+    background-size: cover
+    background-position: 40%
+    min-height: 45rem
+    // margin-top: 1rem
+    // margin-bottom: 1rem
+
+.card
+    margin-bottom: 10%
+
+
+// // Medium devices (tablets, 768px and down)
+@media (max-width: 992px) 
+    .el
+        font-size: 0.6rem 
+
+// // Medium devices (tablets, 768px and up)
+@media (min-width: 992px)
+    .el
+        font-size: 1rem
+
+// // Extra extra large devices (Extra large desktops, 1200px and up)
+@media (min-width: 3440px)
+    .el
+        font-size: 1rem
+
+
+.el2t
+    background-color: $bg-color
+    min-height: 45rem
+    padding-right: 5%
+    padding-left: 5%
+    padding-top: 10%
+    font-size: 1.3rem
+
+
+.card-subtitle
+    color: $second-accent-color
+
+.card-title
+    color: $accent-color

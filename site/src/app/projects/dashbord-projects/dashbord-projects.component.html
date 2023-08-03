@@ -1,0 +1,71 @@
+<div class="container-fluid" [class.image0]="id==0" [class.image1]="id==1" [class.image2]="id==2">
+    <div class="row row-back">
+        <!-- <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-back">
+            <a class="btn backbtn" href="/"> INDIETRO </a>
+        </div> -->
+        <div class="col-10 col-sm-9 col-md-9 col-lg-9 col-detail">
+            <div *ngIf="id == 0">
+                <app-ir-switch></app-ir-switch>
+            </div>
+            <div *ngIf="id == 1">
+                <app-first-dapp></app-first-dapp>
+            </div>
+            <div *ngIf="id == 2">
+                <app-study-case></app-study-case>
+            </div>
+        </div>
+        <div class="col-2 col-sm-3 col-md-3 col-lg-3">
+
+            <span [ngClass]="id==0 ? 'show': 'hide'">
+                <a class="accent" href="projects/1">Prossimo progetto</a>
+                <a class="accent" href="projects/1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                </a>
+            </span>
+            <span [ngClass]="id==1 ? 'show': 'hide'">
+                <a class="accent" href="projects/2">Prossimo progetto</a>
+                <a class="accent" href="projects/2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                </a>
+            </span>
+            <span [ngClass]="id==2 ? 'show': 'hide'">
+                <a class="accent" href="projects/0">Prossimo progetto</a>
+                <a class="accent" href="projects/0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </div>
+    <!-- <div class="row row-projects">
+        <div class="col-12 col-sm-12 col-md-3 col-lg-2 col-navigation">
+            <div [ngClass]="id==0 ? 'active': 'nostyle'">
+                <span [ngClass]="id==0 ? 'show': 'hide'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                </span> <a href="projects/0" [ngClass]="id==0 ? 'active': 'nostyle'">IRSwitch </a><br>
+            </div>
+            <div  [ngClass]="id==1 ? 'active': 'nostyle'">
+                <span [ngClass]="id==1 ? 'show': 'hide'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                </span>
+                <a href="projects/1" [ngClass]="id==1 ? 'active': 'nostyle'">Prima Dapp </a><br>
+            </div>
+            <div [ngClass]="id==2 ? 'active': 'nostyle'">
+                <span [ngClass]="id==2 ? 'show': 'hide'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                </span> <a href="projects/2" [ngClass]="id==2 ? 'active': 'nostyle'">Caso Studio </a><br>
+            </div>
+        </div>
+    </div> -->
+</div>

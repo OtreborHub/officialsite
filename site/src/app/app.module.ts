@@ -10,6 +10,12 @@ import { EvoComponent } from './evo/evo.component';
 import { SkillsComponent } from './skills/skills.component';
 import { BioComponent } from './bio/bio.component';
 import { WhymeComponent } from './whyme/whyme.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ExpComponent } from './exp/exp.component';
+import { IrSwitchComponent } from './projects/ir-switch/ir-switch.component';
+import { FirstDappComponent } from './projects/first-dapp/first-dapp.component';
+import { DashbordProjectsComponent } from './projects/dashbord-projects/dashbord-projects.component';
+import { StudyCaseComponent } from './projects/study-case/study-case.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +26,13 @@ import { WhymeComponent } from './whyme/whyme.component';
     EvoComponent,
     SkillsComponent,
     BioComponent,
-    WhymeComponent
+    WhymeComponent,
+    ProjectsComponent,
+    ExpComponent,
+    IrSwitchComponent,
+    FirstDappComponent,
+    DashbordProjectsComponent,
+    StudyCaseComponent,
   ],
   imports: [
     BrowserModule,

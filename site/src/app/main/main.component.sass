@@ -1,45 +1,66 @@
-h2
-    color: #d1904b
-    font-size: 3rem
+$accent-color: #e59f14 
+
+// // Large devices (tablets, 768px and down)
+@media (max-width: 992px) 
+    .photo-fluid
+        // font-size: 0.3rem
+        height: 65rem
+    #subgreeting
+        font-size: 1.5rem
+    #hello
+        font-size: 3rem
+
+// large devices (large desktops, 992px and up)
+@media (min-width: 992px)
+    .photo-fluid
+        height: 75rem
+    #subgreeting
+        font-size: 2rem
+    #hello
+        font-size: 4rem
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) 
+    .photo-fluid
+        height: 100rem
+    #subgreeting
+        font-size: 2.5rem
+    #hello
+        font-size: 5rem
+
+// // Extra extra large devices (Extra large desktops, 1200px and up)
+@media (min-width: 3440px)
+    .photo-fluid
+        height: 120rem
+    #subgreeting
+        font-size: 3rem
+    #hello
+        font-size: 6rem
 
 .photo-fluid
-    // background-image: url('https://i.gifer.com/4CND.gif')
-    // background-image: linear-gradient(#d1904b, #2e2b28)
-    background-image: url("bg.png")
-    padding-top: 8%
+    background-image: url("bg2.png")
     background-position: center
-    background-repeat: no-repeat
     background-size: cover
-    min-height: 65rem
+    padding-top: 10%
 
-.col
-    margin: auto
+.accent
+    color: $accent-color
 
-.downarr-img
-    height: 32px
-    width: 32px
-
-.dot
-    color: #d1904b
-
-#animatedText
-    font-size: 6rem
+#hello
     font-family: Geneva, Verdana, sans-serif
-    opacity: 1
+    text-align: center
     // transition: opacity 0.5s ease-in-out
 
 // #animatedText.fadeOut
 //     opacity: 0
 
-#firstFade
+#subgreeting
     padding-left: 1%
-    font-size: 2rem
+    
+    text-align: center
     font-family: Geneva, Verdana, sans-serif
     opacity: 1
     // transition: opacity 1.5s ease-in-out
-
-.anchor
-    color: #d1904b !important
 
 // #firstFade.fadeIn
 //     opacity: 1

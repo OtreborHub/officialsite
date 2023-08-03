@@ -1,12 +1,16 @@
+$primary-color: #148ced
+$text-color: #9d22bfd4
+$bg-color: #ea8c27
+
 .container-fluid
-    padding-top: 10rem
-    padding-bottom: 5rem
-    background-color: #ba6000
+    padding-top: 5%
+    padding-bottom: 2%
+    // background-color: $bg-color
+    background-image: linear-gradient(#000000 2%, $primary-color)
     // background-image: url("180bg.png")
     background-size: cover
     background-position: center
     background-repeat: no-repeat
-    min-height: 65rem
 
 .textContainer
     margin-bottom: 5rem
@@ -22,16 +26,15 @@
     // padding-right: 12rem
 
 .counter
-    font-size: 3rem
     margin-right: 1rem
-    color: #d17819
+    color: $primary-color
 
 .element
     font-size: 3rem
 
 .description
     // min-height: 20rem
-    border: 0.7rem solid #d1904b
+    border: 0.7rem solid $primary-color
     border-radius: 2rem
 
 .sx
@@ -47,12 +50,12 @@
 h2
     font-family: Geneva, Verdana, sans-serifw
     font-size: 3rem
-    color: #d1904b
+    color: $primary-color
 
 h5
     font-family: Geneva, Verdana, sans-serifw
     font-size: 2rem
-    color: #767474d4
+    color: $text-color
     margin-bottom: 3rem
 
 // .image0
@@ -71,12 +74,17 @@ h5
 // .text1, .text3
 //     color: #ffffff
 
+
+.counter-text
+    color: #000000 
+
 .light
-    color: #ffffff
+    color: #000000
+    background-color: $primary-color
 
 .dark
-    color: #000000
-    background-color: #d1904b
+    color: #ffffff
+    background-color: #000000
 
 .selectElement
     align-self: center
@@ -89,7 +97,7 @@ h5
 
 
 .selectedDate
-    border: 1px solid #d1904b
+    border: 3px solid $primary-color
     border-radius: 0.3rem
     padding-left: 1rem
     padding-right: 1rem
