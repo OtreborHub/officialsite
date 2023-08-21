@@ -6,7 +6,7 @@ Very easy Angular 12 project using Bootstrap 5.3 UI framework and EmailJS 3.11 l
 Easy to install: download the code. 
 Open a terminal under officialsite/site and run:
 
-**npm install**
+*npm install*
 
 after the process finished, run
 
