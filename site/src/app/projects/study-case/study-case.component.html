@@ -1,15 +1,44 @@
-<h2> Casi Studio: Start2Impact </h2>
+<h3> {{ lang=='it' ? 'Casi Studio' :  'Study Cases' }}: Start2Impact </h3>
 
-<h5> 1) Asta di beneficenza </h5>
-<p> Un'azienda nel settore lifestyle vuole organizzare un'asta di beneficenza tramite tecnologia Blockchain. <br>
-<span> <a class="accent" href=""> QUI</a> puoi vedere la soluzione che ho proposto!</span>
+<p class="intro"> 
+    {{ lang=='it' ? 'Il Master in Blockchain Development coinvolge una serie di casi studio, analisi e realizzazione di progetti applicabili a casi reali.' :
+    'The Master\'s in Blockchain Development involves a series of case studies, analyses, and project implementations applicable to real-world scenarios.' }}
+    <br>
+    {{ lang=='it' ? 'Di seguito una rapida panoramica e la documentazione associata a due dei progetti presentati.':
+    'Below is a brief overview and the associated documentation for two of the presented projects.' }}
 </p>
-<p> Il contratto è stato leggermente perfezionato rispetto a quello mostrato nella presentazione <br> 
-    <span> Scarica <a class="accent" href=""> QUI</a> l'ultima versione dello Smart Contract</span>
+<h4><strong>{{ lang=='it' ? 'Asta di beneficenza' : 'Charity Auction'}} </strong></h4>
+<p> {{ lang=='it' ? 
+    'Un\'azienda nel settore lifestyle vuole organizzare un\'asta di beneficenza tramite tecnologia Blockchain.
+    L\'obiettivo è realizzare uno smart contract che soddisfi i requisiti minimi che il cliente richiede e consegnare una presentazione che evidenzi le principali funzionalità del contratto.
+    Di seguito la presentazione e il contratto.' : 
+    'A lifestyle company aims to organize a charity auction using blockchain technology.
+    The goal is to create a smart contract that fulfills the client\'s minimum requirements and provide a presentation highlighting the contract\'s key functionalities.
+    Below is the presentation and the contract.' }}
 </p>
-
-<h5> 2) Agenzia viaggi </h5>
-<p> Un'agenzia viaggi è interessata al mondo della blockchain e vorrebbe capire quali protocolli Ethereum può sfruttare per sviluppare 
-    il businness di un viaggio ecosostenibile <br>
-    <span> <a class="accent" href=""> QUI</a> puoi vedere la soluzione che ho proposto!</span>
+<hr>
+<h4><strong class="accent"> {{ lang=='it' ? 'Documentazione' : 'Docs'}} </strong></h4>
+<ul>
+    <li>
+        <a class="accent" href="https://drive.google.com/file/d/1LbIhENd30NEsS966dD_8WLJhs_rM8d6G/view?usp=sharing" target="_blank"> {{ lang=='it' ? 'Presentazione' : 'Presentation' }}.pdf </a>
+    </li>
+    <li>
+        <a class="accent" href="https://drive.google.com/file/d/1ckFbdj44l--O-CWS1Bq8qoaXtcAVaEsQ/view?usp=sharing" target="_blank"> {{ lang=='it' ? 'Contratto' : 'Contract' }}.sol </a>
+    </li>
+</ul>
+<hr class="break">
+<h4><strong> {{ lang=='it' ? 'Agenzia viaggi' : 'Travel Agency'}} </strong></h4>
+<p> 
+    {{ lang=='it' ? 'Un\'agenzia viaggi è interessata al mondo della blockchain e vorrebbe capire quali protocolli Ethereum può sfruttare per sviluppare 
+    il businness di un viaggio ecosostenibile. L\'obiettivo è produrre un\'analisi degli strumenti che la blockchain mette a disposizione per rendere realizzare il progetto dell\'agenzia viaggi' : 
+    'A travel agency is intrigued by the realm of blockchain and would like to explore which Ethereum protocols can be harnessed to develop their sustainable travel business.
+    The objective is to conduct an analysis of the blockchain tools available to bring the travel agency\'s project to fruition.' }}
 </p>
+<hr>
+<h4><strong class="accent"> {{ lang=='it' ? 'Documentazione' : 'Docs'}} </strong></h4>
+<ul>
+    <li>
+        <a class="accent" href="https://drive.google.com/file/d/1dEwUCqgNolteUNiyz734VX0Bceqxk5cZ/view?usp=sharing" target="_blank"> {{ lang=='it' ? 'Caso studio' : 'Study case' }}.pdf </a>
+    </li>
+</ul>
+<hr class="end">

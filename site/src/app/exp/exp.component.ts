@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslationService } from '../translation.service';
 
 @Component({
   selector: 'app-exp',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExpComponent implements OnInit {
 
-  constructor() { }
+  constructor(private translation: TranslationService) { }
+
+  lang: string = 'it';
 
   ngOnInit(): void {
+    this.lang = this.translation.getLanguage();
+    
+    this.translation.changeLang.subscribe(() => {
+      this.lang = this.translation.getLanguage();
+    })
   }
 
 }

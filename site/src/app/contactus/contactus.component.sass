@@ -1,5 +1,85 @@
+$accent-color: #e59f14
+$disabled-color: #e59f1474
+$text-color: #000
+
+// Small devices (tablets, 576px and down)
+@media (max-width: 576px) 
+    p
+        font-size: 1.3rem
+    .row-main
+        padding-bottom: 100%
+    .container
+        padding-top: 5%
+
+// Small devices (tablets, 576px and up)
+@media (min-width: 576px) 
+    p
+        font-size: 1.3rem
+    .row-main
+        padding-bottom: 100%
+    .container
+        padding-top: 5%
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) 
+    p
+        font-size: 1.2rem
+    .form-label, .text-danger
+        font-size: 1.1rem
+    .row-main
+        padding-bottom: 10%
+    .container
+        padding-top: 3%
+
+
+// // Extra extra large devices (Extra large desktops, 1200px and up)
+@media (min-width: 3440px)
+    p
+        font-size: 1.4rem
+    .form-label, text-danger
+        font-size: 1.2rem
+
+
+
 .container-fluid
     background-image: url('360bg.png')
     background-size: cover
-    min-height: 33rem
-    // background-color: #000000
+
+.container
+    padding-left: 10%
+    padding-right: 10%
+
+.row-main
+    padding-top: 2%
+    
+.text
+    padding-bottom: 3%
+
+.accent-border
+    border: 0.1rem solid $text-color
+    border-radius: 10px
+
+.mark-invalid
+    color: red
+
+button
+    text-align: center
+    width: 25%
+
+.enabled
+    background-color: $accent-color
+    border: 1px solid $accent-color
+    color: $text-color
+
+.disabled
+    background-color: $disabled-color
+    border: 1px solid $disabled-color
+    color: $text-color
+
+.accent-linkedin
+    color: #2061bc
+    text-decoration: none
+
+.accent-github
+    color: #69238f
+    text-decoration: none

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslationService } from '../translation.service';
+// import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-main',
@@ -6,17 +8,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.sass']
 })
 export class MainComponent implements OnInit {
-  fadeInNext: boolean = true;
-  fadeOut: boolean = false;
-  fadeInMenu : boolean = false;
-  fadeInStory : boolean = false;
-  fadeOutStory : boolean = false;
-  openStory: boolean = false;
+  // fadeInNext: boolean = true;
+  // fadeOut: boolean = false;
+  // fadeInMenu : boolean = false;
+  // fadeInStory : boolean = false;
+  // fadeOutStory : boolean = false;
+  // openStory: boolean = false;
   
-  constructor() { }
+  constructor(private translation: TranslationService) { }
+
+  lang: string = 'it';
 
   ngOnInit(): void {
+    this.lang = this.translation.getLanguage();
+    
+    this.translation.changeLang.subscribe(() => {
+      this.lang = this.translation.getLanguage();
+    })
+    // this.translate.setDefaultLang('it'); // Imposta la lingua predefinita
+    // this.translate.use('it'); // Usa la lingua predefinita
   }
+  
 
   // onScroll(): void {
   //   window.scrollY
@@ -31,20 +43,5 @@ export class MainComponent implements OnInit {
   //     // this.fadeInNext = true;
   //   } 
   // }
-
-  openAcc(index: number){
-  }
-
-  onMouseEnter() {
-    console.log("mouse enter");
-    this.fadeInStory = true;
-
-  }
-
-  onMouseOut(){
-    console.log("mouse out");
-    this.fadeInStory = false;
-    this.fadeOutStory = true;
-  }
 
 }

@@ -1,14 +1,242 @@
-<h2> Prima Dapp </h2>
-<p> Se hai letto la mia filosofia saprai che un filone della mia carriera sta inseguendo l'IoT.</p>
-<p> Beh ecco, cercando l'IoT nell'informatica, ho trovato gli Oracles al servizio della Blockchain. 
-    Peccato che all'epoca della prima ricerca della Blockchain, conoscessi soltanto il nome. 
-    Dopo un periodo di studio dell'ecosistema Ethereum e del linguaggio Solidity ho voluto testare gli strumenti appresi.
-
-    Ho creato dunque un applicativo Angular, che integra la libreria Web3 per collegarsi a Smart Contract realizzati ad hoc.
-    Compilazione e deploy dei contratti sono gestiti con Truffle e Ganache come 'Pannello di controllo'.
+<h3> {{ lang=='it' ? 'Prima Dapp' : 'First Dapp' }} </h3>
+<p> {{ lang=='it' ? 'Se hai letto la mia storia saprai che un filone della mia carriera sta inseguendo l\'IoT.' : 
+    'If you\'ve read my story, you\'ll know that a significant thread in my career is focused on IoT.' }}
+    <span> {{ lang=='it' ? 'Beh ecco, cercando l\'IoT nell\'informatica, ho trovato gli Oracles al servizio della Blockchain. 
+        Peccato che all\'epoca della prima ricerca, della Blockchain conoscessi solo il nome. 
+        Dopo un periodo di studio dell\'ecosistema Ethereum e del linguaggio Solidity ho voluto testare gli strumenti appresi.' :
+        
+        'Well, in pursuing IoT within the realm of computer science, I stumbled upon Oracles serving the Blockchain.
+        It\'s unfortunate that during my initial exploration of the Blockchain, I was only familiar with the name. 
+        After a period of studying the Ethereum ecosystem and Solidity language, I yearned to put my newly acquired tools to the test.' }}
+    </span>
+    <span>
+        {{ lang == 'it' ? 'Ho creato dunque un applicativo Angular, che integra la libreria Web3 per collegarsi a Smart Contract realizzati ad hoc.
+        Compilazione e deploy dei contratti sono gestiti con Truffle, mentre Ganache come pannello di controllo.' : 
+        'Thus, I developed an Angular application that integrates the Web3 library to connect with tailor-made Smart Contracts.
+        Contract compilation and deployment are managed using Truffle, with Ganache as the control panel.' }}
+    </span>
 </p>
 <p> 
-    Il front-end è piuttosto basico ma fa tutto quello che serve<br>
-
-    IMMAGINE HOME
+    {{ lang=='it' ? 'Il front-end è minimale e risulta piuttosto comodo per testare qualche prototipo':
+    'The front-end is minimal and proves quite convenient for testing a few prototypes.' }} 
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-emoji-wink" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+        <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm1.757-.437a.5.5 0 0 1 .68.194.934.934 0 0 0 .813.493c.339 0 .645-.19.813-.493a.5.5 0 1 1 .874.486A1.934 1.934 0 0 1 10.25 7.75c-.73 0-1.356-.412-1.687-1.007a.5.5 0 0 1 .194-.68z"/>
+    </svg>
+    <br>
 </p>
+
+<hr>
+<div class="container-fluid">
+    
+    <p>
+        <a class="git" href="https://github.com/OtreborHub/first-dapp" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+            Github 
+        </a>
+    </p>
+    <h2 class="accent"><i> {{ lang=='it' ? 'Contenuti' : 'Contents' }} </i></h2>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+        <div class="description">
+            <div class="container">
+                <p class="title-description">
+                    {{ lang=='it' ? 'Nel progetto troverai un po\' di' : 'In the project, you will find a bit of'}}
+                    HTML, CSS, Typescript {{ lang=='it' ? 'e' : 'and' }} Solidity.
+                </p>
+                
+                <p class="title-description">
+                    {{ lang=='it' ? 'L\'applicativo è stato realizzato impiegando il framework Angular in sinergia con le librerie Bootstrap e Web3.
+                    Per la creazione, il testing e il deploy degli smart contract, ho usato la combinazione Truffle e Ganache, con un minimo appoggio a RemixIDE.' :
+                    'The application was developed using the Angular framework in conjunction with Bootstrap and Web3 libraries.
+                    For the creation, testing, and deployment of smart contracts, I employed the combination of Truffle and Ganache, with occasional assistance from RemixIDE.' }} 
+                    <br>
+                    {{ lang=='it' ? 'La firma delle transazioni, è stata affidata ad Infura.' : 'Transaction signing has been entrusted to Infura.' }}
+                </p>
+
+            </div>
+        </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-9">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button id="storyAcc" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Login Metamask
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 col-md-8 image">
+                            <img src="../../../assets/dapp/login-metamask.png" width="75%" height="100%" >&nbsp;
+                        </div>
+                        <div class="col-12 col-lg-4 col-md-4">
+                            <p class='image-text'> 
+                                {{ lang=='it' ? 'La prima pagina è composta da una barra di navigazione e un pulsante di connessione verso portafogli Metamask.' :
+                                'The initial page consists of a navigation bar and a connection button to the Metamask wallet' }} <br>
+                                {{ lang=='it' ? 'Per prima cosa è necessario procedere con il collegamento del portafoglio:' : 
+                                'Firstly, it\'s necessary to initiate the wallet connection:' }} <br>
+                                {{ lang=='it' ? 'In caso di mancata autenticazione, premendo uno dei pulsanti di navigazione, l\'utente verrà bloccato da un popup d\'errore.' : 
+                                'If authentication fails and a navigation button is pressed, the user will be restricted by an error popup.' }}  <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                {{ lang=='it' ? 'Scrivere e leggere Risorse' : 'Writing and reading resources' }}
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-12 col-lg-12 col-md-12 image">
+                            <img src="../../../assets/dapp/insert.png" width="75%" height="100%">
+                        </div>
+
+                        <div class="col-12 col-lg-12 col-md-12">
+                            <p class='image-text'> 
+                                {{ lang=='it' ? 'La pagina principale fa riferimento al contratto' : 'The home page refers to the contract.' }} <i>TestContract.sol</i>.
+                                {{ lang=='it' ? 
+                                'Il contratto permette di inserire risorse con un Nome e un Contenuto.
+                                Nelle immagini sopra viene mostrato un esempio di inserimento con nome della risorsa \"Test\" e contenuto \"Text Content\".
+                                Dobbiamo firmare la transazione con Metamask per poter effettuare una scrittura su Blockchain.' : 
+                                'The contract allows for the insertion of resources with a Name and a Content.
+                                The upper images showcase an instance of insertion featuring the resource name \"Test\" and content \"Text Content\".
+                                We will need to sign the transaction with Metamask in order to perform a write operation on the blockchain.' }} <br>
+                                {{ lang == 'it' ? 'Un pop up comparirà per confermare il successo dell\'operazione.' : ' A popup will appear to confirm the success of the operation.'}}
+
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="row rowimage">
+                        <div class="col-4 image">
+                            <img src="../../../assets/dapp/meta-insert.png" width="75%" height="100%">
+                        </div>
+                        <div class="col-7 image">
+                            <img src="../../../assets/dapp/pop success.png"  width="75%" height="100%">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-12 col-md-12">
+                            <p class='image-text'> 
+                                {{ lang=='it' ? 'La ricerca delle risorse può essere effettuata in diversi modi:
+                                per Nome della risorsa, per l\'ID della risorsa, o lasciando entrambi i campi di ricerca vuoti.
+                                Con la ricerca per nome è possibile avere più di un risultato, con quella per ID sarà recuperato un sola specifica risorsa
+                                mentre lasciando i campi di ricerca vuoti, vedremo la lista completa delle risorse create.' : 
+                                'Resource retrieval can be performed in various ways:
+                                By the resource Name, by the resource ID, or by leaving both search fields empty.
+                                With a Name search, multiple results are possible; with an ID search, a specific resource will be retrieved;
+                                leaving the search fields empty will display the complete list of created resources.' }}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-12 col-md-12 image">
+                            <img src="../../../assets/dapp/search result.png" width="75%" height="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                {{ lang=='it' ? 'Trasferimento ETH' : 'Sending ETH' }}
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 col-md-8 image">
+                            <img src="../../../assets/dapp/transfer.png" width="75%" height="100%" > 
+                        </div>
+                        <div class="col-12 col-lg-4 col-md-4">
+                            <p class='image-text'>
+                                {{ lang=='it' ? 'La sezione ETH è legata allo stesso contratto ma sfrutta le funzioni di trasferimento base di ETH.
+                                In questa sezione possiamo visualizzare il bilancio dell\'account Metamask
+                                e inviare ETH ad altri account. Pensiamola come la pagina di un bonifico istantaneo.
+                                Il pulsante Dona, permette di fornire liquidità al contratto.' : 
+                                'The ETH section is connected to the same contract but utilizes basic ETH transfer functions
+                                (only later I discovered the mechanism of approval!). In this section, we can view the balance of the Metamask account
+                                and send ETH to other accounts. Think of it as an instant transfer page.
+                                The Donate button allows you to provide liquidity to the contract.' }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                Tokens
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 col-md-8 imagedesc">
+                            <img src="../../../assets/dapp/token.png" width="100%" height="100%" > 
+                            <span class="caption left"><i>
+                                {{lang=='it' ? 'Questo contratto è utilizzato come playground, e dunque non rappresenta correttamente tutte le funzionalità dei token ERC-20.' 
+                                : 'This contract is utilized as a playground and therefore does not accurately represent all the functionalities of ERC-20 tokens.'}} </i></span>
+                        </div>
+                        <div class="col-12 col-lg-4 col-md-4">
+                            <p class='image-text'>
+                                {{ lang=='it' ? 'La sezione Tokens è legata al contratto' : 'The Tokens section is linked to the contract.' }} <i> TestToken.sol. </i>
+                                {{ lang=='it' ? 'In particolare, al deploy del contratto vengono mintati 5ETH di TSTK (TestToken) dall\'indirizzo del proprietario del contratto.
+                                I TSTK Token dovranno essere importati su Metamask per poter essere visualizzati.' :
+                                'Specifically, during contract deployment, 5 ETH worth of TSTK (TestToken) are minted from the contract owner\'s address.
+                                The TSTK Tokens need to be imported into Metamask to be displayed.' }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                NFTs 
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 col-md-8 imagedesc">
+                            <img src="../../../assets/dapp/cards.png" width="100%" height="100%" > 
+                            <span class="caption left"><i>
+                                {{lang=='it' ? 'Questo contratto è utilizzato come playground, e dunque non rappresenta correttamente tutte le funzionalità dei token ERC-20.' 
+                                : 'This contract is utilized as a playground and therefore does not accurately represent all the functionalities of ERC-20 tokens.'}} </i></span>
+                        </div>
+                        <div class="col-12 col-lg-4 col-md-4">
+                            <p class='image-text'> 
+                                {{ lang=='it' ? 'La sezione NFT è legata al contratto': 'The NFT section is tied to the contract. ' }} <i> TestNFT.sol. </i> 
+                                {{ lang=='it' ? 'In particolare, al deploy del contratto
+                                vengono mintati, con l\'indirizzo del contratto stesso, 4 NFT (TSTC - TestCard) composti da un URL dell\'immagine, una descrizione e un titolo.
+                                Dalla pagina è possibile mintare o trasferire NFT.' : 
+                                'Specifically, during contract deployment, 4 NFTs (TSTC - TestCard) are minted with the contract\'s address, each composed of an image URL, a description, and a title.
+                                From this page, you can mint or transfer new NFTs.' }}    
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

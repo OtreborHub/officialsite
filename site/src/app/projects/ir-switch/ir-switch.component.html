@@ -1,25 +1,146 @@
-<h2> IR Switch </h2>
+<h3> IR Switch </h3>
 <p>
-    Come ti dicevo prima il core dell'IR Switch sono due sensori ad infrarossi che si 'guardano'. 
-    Quando interrompi il loro sguardo, avviene l'interazione che ci attendiamo da un interruttore: l'accensione o lo spegnimento di un dispositivo. 
-    Per questo esperimento abbiamo creato una luce 'notturna' dal colore personalizzabile, applicata ad una scrivania da camera.
-    Il circuito è stato prima testato su breadboard e poi realizzato su millefori con l'aiuto di Multisim e Eagle per la realizzazione dello schema elettrico
-    e del layout PCB per il posizionamento dei componenti.
+    {{ lang=='it' ? 'Come puoi aver intuito dalla sezione Progetti nella Home, il core dell\'IR Switch sono un trasmettitore e un ricevitore IR puntati l\'uno contro l\'altro. 
+    Quando il ricevitore smette di ricevere, avviene l\'interazione che ci attendiamo da un interruttore: l\'accensione o lo spegnimento di un dispositivo.
+    Per questo esperimento l\'IR Switch è stato adattato ad una luce notturna dal colore personalizzabile, applicata ad una scrivania da camera.
+    Il circuito è stato prima testato su breadboard e poi realizzato su millefori con l\'aiuto di Multisim per la progettazione dello schema elettrico
+    e del layout PCB.
 
     Essendo ancora nel mondo universitario ho prodotto una documentazione a metà tra il tecnico e il commerciale,
-    quindi immagino possa essere di semplice comprensione (il contenuto è disponibile in lingua inglese).
+    quindi immagino di semplice comprensione.' : 
 
-
+    'As you might have deduced from the Projects section on the Home page,
+    the core of the IR Switch consists of an IR transmitter and receiver positioned facing each other.
+    When the receiver no longer detects the signal, the well-known interaction of a classic switch occurs, resulting in the activation or deactivation of a device.
+    For this experiment, the IR Switch has been adapted into a color customizable night lamp, which has been attached to a bedroom desk. The circuit underwent initial testing on a breadboard and was later transferred to a perfboard using Multisim for the creation of both the electrical schematic and PCB layout.
+    
+    Since I was still attending the university, the documentation is a mix of technical and commercial aspects, intended to be easily comprehensible.'
+    }}
+    <span><i> {{ lang=='it' ? '(il contenuto è disponibile solo in lingua inglese)' : ''}} </i></span>
 </p>
-<span><a class="accent" target="_blank" href="https://drive.google.com/file/d/1de6FRKEmYoyUbrvkTUNWyhZmf-FlrecH/view?usp=sharing"> Clicca qui</a> per vedere la documentazione</span>
-
+<hr>
+<h4><strong class="accent"> {{ lang=='it' ? 'Documentazione' : 'Docs'}} </strong></h4>
+<ul>
+    <li>
+        <a class="accent" href="https://drive.google.com/file/d/1de6FRKEmYoyUbrvkTUNWyhZmf-FlrecH/view?usp=sharing" target="_blank"> IR Switch.pdf </a>
+    </li>
+</ul>
 <p>
-    Per i geek, veri geek:
-    Una parte della lista della spesa per la realizzazione del progetto include:
+    {{ lang=='it' ? 'Per i veri geek, ecco una parte della lista della spesa per la realizzazione del progetto:' 
+    : 'For the true geeks out there, here a portion of the shopping list for project implementation:' }}
 </p>
 <ul>
-    <li><span>Sensore TX: SFH409 | Datasheet <a class="accent" href="https://drive.google.com/file/d/0B4Do_-CjlHHDZ2xDaUhfRjFyYjg/view?usp=sharing&resourcekey=0-ihJJCqlCKNlopGXWEAs7GA" target="_blank"> QUI</a> ( sfortunatamente disponibile sono in tedesco )</span></li>
-    <li><span>Flip Flop: LS74LS74A | Datasheet <a class="accent" href="https://drive.google.com/file/d/0B4Do_-CjlHHDVW90c0loNjBZQ2c/view?usp=sharing&resourcekey=0-D32coQObADRIrhVBsFXofQ" target="_blank"> QUI</a></span></li>
-    <li><span>Transistor MOS: IRFD120 | Datasheet <a class="accent" href="https://drive.google.com/file/d/0B_DL_9JwHZtKSEtmdXR6dndERnM/view?usp=sharing&resourcekey=0-JJesunKqn7-6psE2HuEBbg" target="_blank"> QUI</a></span></li>
+    <li><span>{{ lang=='it' ? 'Sensore TX' : 'TX Sensor' }}: <a class="accent" href="https://drive.google.com/file/d/0B4Do_-CjlHHDZ2xDaUhfRjFyYjg/view?usp=sharing&resourcekey=0-ihJJCqlCKNlopGXWEAs7GA" target="_blank"> SFH409 </a></span></li>
+    <li><span>Flip Flop: <a class="accent" href="https://drive.google.com/file/d/0B4Do_-CjlHHDVW90c0loNjBZQ2c/view?usp=sharing&resourcekey=0-D32coQObADRIrhVBsFXofQ" target="_blank"> LS74LS74A </a></span></li>
+    <li><span>{{ lang=='it' ? 'Transistor MOS' : 'MOS Transistor' }}: <a class="accent" href="https://drive.google.com/file/d/0B_DL_9JwHZtKSEtmdXR6dndERnM/view?usp=sharing&resourcekey=0-JJesunKqn7-6psE2HuEBbg" target="_blank"> IRFD120 </a></span></li>
 </ul>
-<span> Se ti interessa lo schema elettrico, <a class="accent" href="/meetus"> contattami</a> che ne parliamo! </span>
+<p> {{ lang=='it' ? 'Se ti interessa la ricetta completa (parlo dello schema elettrico)' : 'If you\'re interested in the complete recipe (I mean the electrical schematic), feel free to' }}
+    <a class="accent" href="/meetus"> {{ lang=='it' ? 'contattami' : 'contact me' }}</a>{{ lang=='it' ? ' e ne parliamo!' : ', and we can discuss it further!' }}</p>
+<hr class="end">
+<div class="container-fluid">
+        <h2 class="accent"><i> {{ lang=='it' ? 'Contenuti' : 'Contents' }} </i></h2>
+        <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+        <div class="description">
+            <div class="container">
+                <p class="title-description">
+                    {{ lang=='it' ? 'ATTENZIONE': 'WARNING'}} <br>
+                    <span class="text-description">{{lang=='it'? 'se sei fotosensibile, non guardare il': 'if you are photosensitive, be ware'}} 
+                        <strong>{{ lang=='it' ? 'Test tempo di reazione' : '' }} </strong> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                        </svg>
+                    </span>
+                </p>
+            </div>
+        </div>
+        </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-9">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button id="storyAcc" class="accordion-button collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                                aria-controls="collapseOne">
+                                {{ lang=='it'? 'Test IR' : 'IR Test'}}
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-12 col-lg-7 col-md-7 image">
+                                        <img src="../../../assets/irswitch/irswitch1.gif" width="50%"
+                                            height="50%">&nbsp;
+                                    </div>
+                                    <div class="col-12 col-lg-5 col-md-5">
+                                        <p class="image-text">
+                                        {{ lang=='it' ? 'Test base della struttura IR con circuito di condizionamento.
+                                        Qui possiamo vedere l\'accensione e lo spegnimento del led giallo in corrispondenza dell\'interruzione del
+                                        raggio IR.' : 
+                                        'Here a basic test of the IR structure with conditioning circuit.
+                                        We can observe the turning on and off of the yellow LED when the IR beam is interrupted.'}}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                {{ lang=='it'? 'Test IR a pieno carico' : 'Full load IR Test'}}
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-12 col-lg-5 col-md-5 image">
+                                        <img src="../../../assets/irswitch/irswitch2.gif" width="50%"
+                                            height="50%">&nbsp;
+                                    </div>
+                                    <div class="col-12 col-lg-7 col-md-7">
+                                        <p class="image-text"> 
+                                            {{ lang=='it' ? 'Test alla struttura IR con circuito di condizionamento a pieno carico.
+                                            In questo caso il carico è rappresentato dalla striscia LED soggetta a variazioni di corrente.
+                                            I potenziometri presenti nella GIF saranno poi utilizzati per mescolare in maniera fluida le tonalità in uscita dalla scriscia LED.':
+                                            'IR structure test with conditioning circuit at full load.
+                                            In this case, the load is represented by the LED strip subjected to current variations.
+                                            The potentiometers, shown in the GIF, will be used to smoothly blend the tones output by the LED strip.' }}
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                {{ lang=='it'? 'Test tempi di reazione' : 'Reaction time test'}}
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-12 col-lg-5 col-md-5 image">
+                                        <img src="../../../assets/irswitch/irswitch3.gif" width="50%" height="45%">
+                                    </div>
+                                    <div class="col-12 col-lg-7 col-md-7">
+                                        <p class="image-text"> 
+                                            {{ lang=='it' ? 'Dopo la conclusione del progetto su breadboard, sono stati testati i tempi di reazione ad input continui.
+                                            Il risultato va ben oltre le reali necessità legate ai tempi di reazione di un interruttore fisico.' :
+                                            'After completing the breadboard project, reaction times were tested with continuous input.
+                                            The results far exceed the actual requirements associated with the reaction times of a physical switch.'}}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>

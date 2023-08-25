@@ -1,31 +1,41 @@
 $accent-color: #ea8c27
-$bg-color: #2e2b28
+$bg-color: #26282c
     
+@media (max-width: 992px)
+    .navbar 
+        font-size: 1.5rem
+    .navbar-brand, .active
+        font-size: 1.8rem
+
+@media (min-width: 992px)
+    .navbar 
+        font-size: 1.3rem
+    .navbar-brand, .active
+        font-size: 1.5rem
+
 .navbar
     background-color: $bg-color
-    // background-image: linear-gradient(#d1904b, #3e3b38)
-
+    border-bottom: 2px solid $accent-color
 .menu
     color: $accent-color
+    margin-left: 10%
 
 .navbar-brand
     color: white
-    padding-bottom: 0rem
 
 .form-switch
     color: white
+    padding-left: 1rem
+    padding-right: 1rem
 
 .pre-form-check-label
     margin-right: 100%
 
 .nav-link
-    padding-bottom: 0rem
+    padding-left: 1rem
 
 .form-switch, .navbar-toggler
     margin-right: 10%
 
-.menu
-    margin-left: 5%
-
-// .navbar
-//     padding: 0rem
+.accent
+    color: $accent-color

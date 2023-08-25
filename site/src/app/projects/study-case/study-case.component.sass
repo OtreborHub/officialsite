@@ -1,4 +1,32 @@
 $accent-color: #e59f14
 
-.accent
+
+// Small devices (tablets, 576px and up)
+@media (max-width: 576px) 
+    p, ul, a
+        font-size: 1.2rem
+    .intro
+        margin-bottom: 3%
+    .break
+        margin-bottom: 3%
+
+// Small devices (tablets, 576px and up)
+@media (min-width: 576px) 
+    p, ul, a
+        font-size: 1.2rem
+
+// // Extra wide large devices (Extra wide desktops, 3440px and up)
+@media (min-width: 3440px)
+    p, ul, a
+        font-size: 1.4rem
+    .intro
+        margin-bottom: 2%
+    .break
+        margin-bottom: 2%
+
+
+.accent, hr
     color: $accent-color
+
+.end 
+    padding-bottom: 10%

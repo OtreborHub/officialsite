@@ -2,21 +2,20 @@
   <div class="maindiv container">
     <div class="row">
       <div class="col-12">
-        <h1 id="hello">Ciao<span class="accent">!</span></h1>
-        <p id="subgreeting">Io sono Roberto,<br>un giovane appassionato di trovate tecnologiche,
-          sono dottore in ingegneria elettronica, mi piace giocare a biliardo e
-          da qualche anno lavoro come<span class="accent"> ingegnere full stack</span>.<br>
-          <!-- Benvenuto nel mio portfolio! -->
-          <!-- Scorri per <a class="anchor" href="#anchor-bio"> conoscermi meglio</a> -->
-          <!-- <span><iframe src="https://giphy.com/embed/PydTF0pQ11Sawhd3uE" width="32px" height="32px" frameBorder="0"
-              class="giphy-embed" allowFullScreen></iframe>
-            <p><a href="https://giphy.com/stickers/bw-lnd-thelnd-PydTF0pQ11Sawhd3uE"></a></p>
-          </span> -->
-        <!-- </p> -->
-        <!-- <img class="hello-img" src="../../assets/hello.svg" alt="image"> -->
-      </div>
-      <div class="textcol col-12 col-sm-12 col-md-6 col-lg-6">
-        <!-- <p id="animatedText">Ciao<span class="dot">.</span></p> -->
+        <h1 id="hello">{{ lang=='it' ? 'Ciao' : 'Hello' }}<span class="accent">!</span></h1>
+        <p id="subgreeting">{{ lang=='it' ? 'Io sono Roberto' : 'I am Roberto'}},<br>
+          {{ lang=='it' ? 
+          'un giovane appassionato di trovate tecnologiche.' :
+          'a young enthusiast of technological innovations,'
+          }}
+          <br>
+          {{lang=='it' ? 'Sono dottore in ingegneria elettronica, mi piace giocare a biliardo e da qualche anno lavoro come' :
+          'holding a BSc in Electronic Engineering. I enjoy playing billiards and I have been working as a'
+          }} 
+          <span class="accent">{{lang == 'it'? 'ingegnere full stack' : 'full-stack engineer' }}</span>
+          <span>{{ lang=='en' ? ' for the past few years.' : '.' }}</span>
+          <br>
+        </p>
       </div>
     </div>
   </div>
@@ -24,7 +23,4 @@
 
 <app-exp></app-exp>
 <app-projects></app-projects>
-<!-- <app-bio id="anchor-bio"></app-bio> 
-<app-evo></app-evo>
-<app-whyme></app-whyme>
-<app-skills></app-skills> -->
+<app-skills></app-skills>
