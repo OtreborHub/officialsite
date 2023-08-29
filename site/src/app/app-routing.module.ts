@@ -10,9 +10,6 @@ const routes: Routes = [
   {path:'about-me', component: AboutmeComponent},
   {path:'meetus', component: ContactusComponent},
   {path:'projects/:id', component: DashbordProjectsComponent},
-
-
-
 ];
 
 @NgModule({
